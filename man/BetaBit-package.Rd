@@ -6,6 +6,7 @@
 Zbiory danych do opowiadan o Beta i Bit
 }
 \description{
+Zbiory danych do opowiadan o Beta i Bit
 }
 \details{
 \tabular{ll}{
