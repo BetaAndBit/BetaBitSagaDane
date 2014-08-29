@@ -12,4 +12,6 @@ mniejszywa <- function(dane, tytul =  deparse(substitute(dane)), osx = c(19,35),
   abline(h=seq(0.2,0.8,0.2), lty=2, col="grey")
 }
 
+bricks <- cegielki
+lessThanCurve <- mniejszywa
 

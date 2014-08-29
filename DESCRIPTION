@@ -1,10 +1,13 @@
 Package: BetaBit
 Version: 1.0
 Type: Package
-Title: Datasets and functions for the book for kids ,,Beta and Bit''
+Title: Datasets and functions from the book for kids ,,Beta and Bit''
 Date: 2014-05-20
 Author: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
 Maintainer: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
-Description: Dane i funkcje z przygod Bety i Bita
+Description: Data and functions from stories of Beta and Bit
+       Dane i funkcje z przygod Bety i Bita
+LazyLoad: yes
+LazyData: yes
 Depends: R (>= 2.0), RColorBrewer
 License: GPL-3

@@ -1,4 +1,5 @@
 \name{oceny}
+\alias{skradzioneKrasnale}
 \alias{oceny}
 \docType{data}
 \title{
@@ -20,10 +21,10 @@ Zbior danych do opowiadania ,,Sposob na polonistke''
   }
 }
 \details{
-Zbiór danych do opowiadania ,,Sposób na polonistke''
+Zbior danych do opowiadania ,,Sposob na polonistke''
 }
 \source{
-Zbiór danych do opowiadania ,,Sposób na polonistke''
+Zbior danych do opowiadania ,,Sposob na polonistke''
 }
 \examples{
 data(oceny)
