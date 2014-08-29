@@ -2,10 +2,10 @@
 \alias{oceny}
 \docType{data}
 \title{
-Zbiór danych do opowiadania ,,Sposób na polonistkê''
+Zbior danych do opowiadania ,,Sposob na polonistke''
 }
 \description{
-Zbiór danych do opowiadania ,,Sposób na polonistkê''
+Zbior danych do opowiadania ,,Sposob na polonistke''
 }
 \usage{data(oceny)}
 \format{
@@ -20,10 +20,10 @@ Zbiór danych do opowiadania ,,Sposób na polonistkê''
   }
 }
 \details{
-Zbiór danych do opowiadania ,,Sposób na polonistkê''
+Zbiór danych do opowiadania ,,Sposób na polonistke''
 }
 \source{
-Zbiór danych do opowiadania ,,Sposób na polonistkê''
+Zbiór danych do opowiadania ,,Sposób na polonistke''
 }
 \examples{
 data(oceny)
