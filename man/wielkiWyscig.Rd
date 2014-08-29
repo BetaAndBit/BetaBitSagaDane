@@ -2,10 +2,10 @@
 \alias{wielkiWyscig}
 \docType{data}
 \title{
-Zbiór danych do opowiadania ,,Wielki wyscig''
+Zbior danych do opowiadania ,,Wielki wyscig''
 }
 \description{
-Zbiór danych do opowiadania ,,Wielki wyscig''
+Zbior danych do opowiadania ,,Wielki wyscig''
 }
 \usage{data(oceny)}
 \format{
@@ -17,7 +17,7 @@ Zbiór danych do opowiadania ,,Wielki wyscig''
   }
 }
 \details{
-Zbiór danych do opowiadania ,,Wielki wyscig''
+Zbior danych do opowiadania ,,Wielki wyscig''
 }
 \examples{
 data(wielkiWyscig)
