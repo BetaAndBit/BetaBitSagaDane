@@ -1,0 +1,95 @@
+# Wykresy z opowiadania Beta i Bit: ,,Wielki wyścig''
+
+Zacznijmy od wczytania danych. W trzech kolumnach powinny być czasy podróży rowerem, biegiem i metrem.
+
+```{r, message=FALSE, warning=FALSE, fig.width=4, fig.height=4}
+library("BetaBit")
+attach(wielkiWyscig)
+wielkiWyscig / 60
+```
+
+Dane wczytane. Zobaczmy jakie są średnie czasy podróży!
+
+```{r, message=FALSE, warning=FALSE, fig.width=4, fig.height=4}
+mean(rower/60)
+mean(bieg/60)
+mean(metro/60)
+```
+
+Możemy teraz narysować histogram dla różnych czasów przejazdu.
+
+```{r, message=FALSE, warning=FALSE, fig.width=4, fig.height=4}
+hist(x = rower/60, 
+        breaks = 19:35,
+       main='rower', 
+       col='grey')
+hist(bieg/60, main='bieg', breaks = 19:35, col='grey')
+hist(metro/60, main='metro', breaks = 19:35, col='grey')
+```
+
+Ale w opowiadaniu są znacznie ładniejsze wykresy!
+Co zrobić by też mieć łądne wykresy? Trzeba pododawać argumentów.
+
+```{r, message=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+par(mfrow=c(3,1), mar=c(2,5,0,1))
+hist((rower/60), col="grey", 19:35, xlim=c(19,35), 
+      border="white", las=1,xlab="",ylab="rower", 
+     yaxt="n", ylim=c(0,4), main="", xaxt="n")
+abline(h=1:5, col="white", lwd=3)
+abline(v=19:35, col="white", lwd=3)
+axis(1,19:35, col="white", col.ticks="black")
+
+hist((bieg/60), col="grey", 19:35, xlim=c(19,35), 
+     border="white", las=1,xlab="",ylab="bieg", 
+     yaxt="n", ylim=c(0,4), main="", xaxt="n")
+abline(h=1:5, col="white", lwd=3)
+abline(v=19:35, col="white", lwd=3)
+axis(1,19:35, col="white", col.ticks="black")
+
+hist((metro/60), col="grey", 19:35, xlim=c(19,35), 
+     border="white", las=1,xlab="",ylab="metro", 
+     yaxt="n", ylim=c(0,4), main="", xaxt="n")
+abline(h=1:5, col="white", lwd=3)
+abline(v=19:35, col="white", lwd=3)
+axis(1,19:35, col="white", col.ticks="black")
+
+```
+
+Mamy histogram, może teraz czas na mniejszywą, czyli dystrybuantę empiryczną?
+
+```{r, message=FALSE, warning=FALSE, fig.width=4, fig.height=4}
+plot(x=ecdf(rower/60), 
+      main='rower', 
+      xlim=c(19, 35))
+plot(x=ecdf(bieg/60), main='bieg', xlim=c(19, 35))
+plot(x=ecdf(metro/60), main='metro', xlim=c(19, 35))
+```
+
+Ponownie, można odnieść wrażenie, że w opowiadaniu ten wykres był inny.
+
+```{r, message=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+par(mfrow=c(3,1), mar=c(3,5,1,1))
+plot(ecdf(rower/60),las=1,ylab="rower",xlab="",main="", 
+     xlim=c(19,35),bty="n", lwd=3, yaxt="n")
+axis(1,19:35, col="white", col.ticks="black")
+axis(2,seq(0,1,0.2), paste0(seq(0,100,20),"%"), 
+     col="white", col.ticks="white", las=1)
+abline(v=30, lty=3)
+
+plot(ecdf(bieg/60),las=1,ylab="bieg",xlab="",main="", 
+     xlim=c(19,35), bty="n", lwd=3, yaxt="n")
+axis(1,19:35, col="white", col.ticks="black")
+axis(2,seq(0,1,0.2), paste0(seq(0,100,20),"%"), 
+     col="white", col.ticks="white", las=1)
+abline(v=30, lty=3)
+
+plot(ecdf(metro/60),las=1,ylab="metro",xlab="",main="", 
+     xlim=c(19,35),  bty="n", lwd=3, yaxt="n")
+axis(1,19:35, col="white", col.ticks="black")
+axis(2,seq(0,1,0.2), paste0(seq(0,100,20),"%"), 
+     col="white", col.ticks="white", las=1)
+abline(v=30, lty=3)
+
+```                    
+
+
