@@ -22,5 +22,9 @@ Pakiet danych z przygód Bety i Bita
 
 Kody i wykresy z opowiadania <a href="https://rawgit.com/pbiecek/BetaBit/master/vignettes/wielkiWyscig.html">Wielki Wyścig</a>.
 
+<br/>
+
+<img src="https://raw.githubusercontent.com/pbiecek/BetaBit/master/figs/mapaParyz.png"  height="450">
+
 
 
