@@ -1,5 +1,5 @@
-Pakiet danych z przygód Bety i Bita
-===================================
+Dane z Niesamowitych Przygód Bety i Bita
+========================================
 
 <center>
 	<img src="https://raw.githubusercontent.com/pbiecek/BetaBit/master/figs/bit.png" align="left" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
